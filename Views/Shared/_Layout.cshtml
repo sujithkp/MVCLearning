@@ -16,8 +16,11 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $("#SubmitBtn").click(function () {
-
                 $("form").submit();
+            });
+
+            $("input").blur(function () {
+                $("form").valid();
             });
         })
 

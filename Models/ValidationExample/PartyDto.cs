@@ -1,7 +1,7 @@
 ﻿using MVCLearning.CustomDataAnnotations;
+using MVCLearning.Translations.ErrorMessages;
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.Serialization;
 
 namespace MVCLearning.Models.ValidationExample
 {
@@ -14,7 +14,7 @@ namespace MVCLearning.Models.ValidationExample
         public virtual string FirstName { get; set; }
 
         // [NationalNumberRequiredWhen(ErrorMessageResourceType = typeof(ErrorMessages), ErrorMessageResourceName = "NationalNumberRequired")]
-        // [NationalNumber("BirthDate", "GenderId", "PartyDetail.CurrentAddress.CountryId", ErrorMessageResourceType = typeof(ErrorMessages), ErrorMessageResourceName = "NationalNumberInvalid")]
+        //[NationalNumber("BirthDate", "GenderId", "PartyDetail.CurrentAddress.CountryId", ErrorMessageResourceType = typeof(ErrorMessages), ErrorMessageResourceName = "NationalNumberInvalid")]
         public virtual string NationalNumber { get; set; }
 
         // [CardNumber("NationalityId", "CurrentAddress.CountryId", new object[] { Nationality_Belgium, Country_Belgium }, ErrorMessageResourceType = typeof(ErrorMessages), ErrorMessageResourceName = "IDCardNumberRequired")]
@@ -33,8 +33,7 @@ namespace MVCLearning.Models.ValidationExample
         [Required(AllowEmptyStrings = false, ErrorMessage = "Nationality required.")]
         public virtual String Nationality { get; set; }
 
-        //[DateRange(ErrorMessageResourceType = typeof(ErrorMessages), ErrorMessageResourceName = "InBelgiumSinceValid")]
-        //[InSinceRequired(ErrorMessageResourceType = typeof(ErrorMessages), ErrorMessageResourceName = "RequiredField")]
+        [RequiredWhen("Nationality", new object[] { "Belgium" }, ErrorMessage = "In Belgium Since required.")]
         public virtual DateTime? InBelgiumSince { get; set; }
 
         [DataType(DataType.Date)]
