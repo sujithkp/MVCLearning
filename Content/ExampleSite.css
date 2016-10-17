@@ -1,0 +1,1368 @@
+﻿span.field-validation-valid {
+    clear: both;
+    float: left;
+}
+
+div.ButtonArea {
+    margin-left: 15px;
+    margin-top: 25px;
+    float: left;
+    clear: both;
+}
+
+#SubmitBtn {
+    width: 200px;
+    background-color: #c1c1c1;
+    height: 33px;
+}
+
+body1 {
+    margin-top: 20px;
+    font-size: 10pt;
+    color: #454545;
+    background: #fff;
+    font-family: Segoe UI Light, Segoe UI, Tahoma, Arial, Verdana, sans-seri;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    width: 268px;
+}
+
+.ui-c .Layout1 {
+    width: 600px;
+}
+
+.AFIOneHead {
+    width: 650px;
+    height: 550px;
+}
+
+.PopupOkButton {
+    float: right;
+    margin-right: 10%;
+}
+
+.CompanyParameters {
+    width: 275px;
+}
+
+.ActivePopup {
+    box-shadow: 1px 1px 35px #888888;
+    position: fixed;
+    top: 100px;
+    left: 400px;
+    display: block;
+    color: white;
+    font-weight: bold;
+}
+
+.LeftMargin-1 {
+    margin-left: 50px;
+}
+
+.PartyParameters {
+    width: 250px;
+}
+
+.PartyDetailContainer {
+    margin-top: 10px;
+    float: left;
+}
+
+.WrongImage {
+    background-image: url("/Content/icons/Wrong.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+
+
+.RightImage {
+    background-image: url("/Content/icons/Correct.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+
+.InsuranceCompanyLogo {
+    margin-bottom: 20px;
+}
+
+.InsuranceCompanyLogo, .CompanyName, .KrefiCoverInsuranceSliders, #PremiumResultIndicatorImg {
+    display: inline;
+    float: left;
+}
+
+#TotalAccessoriesAmountControl, #PremiumResultIndicator, #AmountWithoutPremiumHeading {
+    margin-top: 10px;
+}
+
+#PremiumResultIndicatorImg {
+    height: 20px;
+    width: 20px;
+}
+
+.LeftMargin {
+    margin-left: 20px;
+}
+
+.Layout1, .Layout2 {
+    margin: 10px;
+}
+
+.Panel {
+    margin-top: 10px;
+    float: left;
+    display: inline;
+}
+
+.Heading {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.FirstPartyName, .SecondPartyName {
+    height: 10px;
+    line-height: 1;
+}
+
+BR {
+    margin: 0;
+}
+
+.orangetheam {
+    color: #F5590F;
+}
+
+div#KrefiCover {
+    height: auto;
+}
+
+div#AFI {
+    height: auto;
+}
+
+
+h1, a.Navigation {
+    font-size: 300%;
+    line-height: 1;
+    margin-bottom: 0.5em;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #454545;
+}
+
+.icon-krefima {
+    margin-top: 25px;
+    margin-right: 60px;
+    display: block;
+    float: right;
+    position: relative;
+    width: 140px;
+    height: 56px;
+    background-image: url(icons/newkrefima.jpg);
+    margin-bottom: 50px;
+}
+
+h1.ActiveNavigation {
+    font-size: 300%;
+    line-height: 1;
+    margin-bottom: 0.5em;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: White;
+}
+
+h1, a.ActiveNavigation {
+    font-size: 300%;
+    line-height: 1;
+    margin-bottom: 0.5em;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: White;
+}
+
+h1 {
+    color: #454545;
+    text-transform: lowercase;
+}
+
+a.Navigation {
+    font-style: normal;
+    text-decoration: none;
+    color: #454545;
+    line-height: 1.25;
+}
+
+h2 {
+    font-size: 150%;
+    line-height: 1;
+    margin-bottom: 0.5em;
+    text-transform: lowercase;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #72B5E9;
+}
+
+    h2.Admin {
+        color: #F5590F;
+    }
+
+label {
+    text-transform: lowercase;
+}
+
+.labelNoLowerCase {
+    text-transform: none;
+}
+
+h2:first-letter, h3:first-letter, label:first-letter {
+    text-transform: uppercase;
+}
+
+h2.Navigation {
+    font-size: 110%;
+    line-height: 1;
+    text-transform: lowercase;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #666666;
+}
+
+h2.ActiveNavigation {
+    font-size: 110%;
+    line-height: 1;
+    text-transform: lowercase;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+h3 {
+    font-size: 125%;
+    line-height: 1;
+    margin-bottom: 0.5em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #72B5E9;
+    text-transform: lowercase;
+}
+
+h5.PopUp {
+    font-size: 90%;
+    line-height: 1.5;
+    color: White;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.Shell {
+    max-width: 1280px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.RowHead {
+    clear: both;
+    float: left;
+    display: block;
+    position: relative;
+    min-height: 5px;
+    min-width: 320px;
+    width: 960px;
+    max-width: 960px;
+    display: inline-block;
+    height: 1%;
+    right: 0;
+}
+
+.MediumRowHead {
+    clear: both;
+    float: left;
+    display: block;
+    position: relative;
+    min-height: 5px;
+    min-width: 604px;
+    width: 604px;
+    max-width: 604px;
+    display: inline-block;
+    height: 1%;
+    right: 0;
+}
+
+.fixedHeight-and-scroll {
+    height: 120px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-top: 1px solid black;
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.fixedHeight-and-scroll-1 {
+    height: 128px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-top: 1px solid black;
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.gridHeader {
+    border-top: 1px solid #d4d4d4;
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+    float: left;
+    width: 603px;
+    padding-top: 5px;
+}
+
+.suggestion {
+    line-height: 17px;
+}
+
+.emptyLine {
+    clear: both;
+    margin-top: 30px;
+}
+
+.TopMargin {
+    margin-top: 25px;
+    clear: both;
+}
+
+.RowBlock {
+    float: left;
+    display: block;
+    position: relative;
+    max-width: 940px;
+    margin-right: 0;
+    right: 0;
+    clear: both;
+}
+
+.AutoWidth-RowBlock {
+    float: left;
+    display: block;
+    position: relative;
+    max-width: auto;
+    margin-right: 0;
+    right: 0;
+    margin-bottom: 30px;
+}
+
+.AutoWidth-RowBlock-2Party {
+    float: left;
+    display: block;
+    position: relative;
+    width: 870px;
+    margin-right: 0;
+    right: 0;
+    margin-bottom: 30px;
+}
+
+.AutoWidth-RowBlock-2Insurances {
+    float: left;
+    display: block;
+    position: relative;
+    width: 875px;
+    margin-right: 0;
+    right: 0;
+    margin-bottom: 30px;
+}
+
+.ColumnBlock {
+    position: relative;
+    float: left;
+    min-width: 307px;
+    width: 307px;
+    max-width: 307px;
+}
+
+.ColumnBlockWithHeight {
+    position: relative;
+    float: left;
+    min-width: 307px;
+    width: 450px;
+    max-width: 450px;
+    line-height: 1.25;
+}
+
+.PopupColumnBlock {
+    position: relative;
+    float: left;
+    width: 310px;
+}
+
+.Panel1 {
+    position: relative;
+    float: left;
+    width: 310px;
+    padding-left: 30px;
+}
+
+.PopupColumnBlock2 {
+    position: relative;
+    float: left; /*width: 175px;*/
+    width: 255px;
+    border: 0px solid red;
+}
+
+.Panel2 {
+    position: relative;
+    float: left; /*width: 175px;*/
+    width: 255px;
+    border: 0px solid red;
+    color: White;
+    font-weight: bold;
+}
+
+.SmallColumnBlock {
+    position: relative;
+    float: left;
+    width: auto;
+}
+
+.ColumnBlock-Empty {
+    position: relative;
+    float: left;
+    width: 127px;
+}
+
+.NavigationBlock {
+    margin-top: 105px;
+    padding-right: 50px;
+    padding-left: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+div {
+    line-height: 20px;
+}
+
+.container {
+    position: relative;
+    float: left;
+}
+
+/* Sets up basic grid floating and margin. */
+div.span-1, div.span-2, div.span-2-5, div.span-3, div.span-4, div.span-4-5, div.span-5, div.span-6, div.span-7, div.span-8, div.span-8-toggle {
+    float: left;
+    margin-right: 10px;
+}
+
+/* The last column in a row needs this class. */
+div.last {
+    margin-right: 0;
+}
+
+/* Use these classes to set the width of a column. */
+.span-1 {
+    width: 30px;
+}
+
+.span-2 {
+    width: 70px;
+}
+
+.span-2-5 {
+    width: 57px;
+}
+
+.span-3 {
+    width: 110px;
+}
+
+.span-4 {
+    width: 150px;
+}
+
+div.span-4-5 {
+    width: 166px;
+}
+
+
+.span-5 {
+    width: 190px;
+}
+
+.span-6 {
+    width: 230px;
+}
+
+.span-6_5 {
+    width: 239px;
+}
+
+.span-7 {
+    width: 270px;
+}
+
+.span-8, div.span-8 {
+    width: 310px;
+    margin: 0;
+}
+
+.span-8-toggle, div.span-8-toggle {
+    width: 310px;
+    margin: 0;
+}
+
+.span-empty {
+    width: 100px;
+}
+
+#ProgressDialog {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.hide {
+    visibility: collapse;
+    display: none;
+    height: 0px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.errorvisible {
+    visibility: visible;
+    color: Red;
+}
+
+.hideIncludingSpace {
+    display: none;
+}
+
+.field-validation-error {
+    color: Red;
+    line-height: 1.25;
+}
+
+.readonly {
+}
+
+.alphaonly {
+}
+
+.alpha-and-hypen-only {
+}
+
+.numericonly {
+}
+
+.decimalonly {
+}
+
+.RadioListDiv {
+    display: inline;
+}
+
+.ActionItemPanelFrontSpace {
+    margin-left: 10px;
+}
+
+.AddSpaceInFront {
+    margin-top: 10px;
+}
+
+.AddSpaceOnTop {
+    margin-top: 20px;
+}
+
+.AddSpaceAtBottom {
+    margin-bottom: 20px;
+}
+
+.NavigationItem {
+    padding: 5px;
+    background-color: transparent;
+    cursor: hand;
+    cursor: pointer;
+}
+
+.ActiveNavigationItem {
+    padding: 5px;
+    color: White;
+    background-color: #3192DF;
+}
+
+.ActiveNavigationItemForAdmin {
+    padding: 5px;
+    color: White;
+    background-color: #F5590F;
+}
+
+P.ValidationError {
+    line-height: 1;
+    color: Red;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.Success {
+    line-height: 1;
+    color: green;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.link {
+    color: Blue;
+    text-decoration: underline;
+    cursor: hand;
+    cursor: pointer;
+}
+
+.SecondColumn {
+    margin-left: 40px;
+}
+
+.PadBottom {
+    padding-bottom: 10px;
+}
+
+.ViewDetail {
+    height: 25px;
+    width: 125px;
+}
+
+.Right {
+    float: right;
+}
+
+.cell-backgroundcolor {
+    background-color: #f2f2f2;
+}
+
+.cell-style {
+    line-height: 25px;
+}
+
+.warning-style {
+    color: Red;
+    margin-left: 50px;
+    margin-top: 18px;
+}
+
+.grouplabel-style {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.datepickerInput {
+}
+
+.radiobutton {
+    font-size: 150%;
+}
+
+.RedText {
+    color: Red;
+    display: inline;
+    margin-left: 3px;
+}
+
+.inlinelabel {
+    display: inline;
+}
+
+.inputinline-style {
+    float: left;
+    margin-right: 10px;
+}
+
+.botright {
+    display: block;
+    float: right;
+    right: 0;
+    width: 120px;
+}
+
+.NavigationBlock h1 {
+    font-size: 190%;
+}
+
+.div_Form_ModalStyle, .ModelPopup, .InsuranceOneHeadPopup, .InsuranceTwoHeadPopup, .WarningPopup {
+    display: none;
+    border: solid 1px black;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    background-color: #3192DF;
+    box-shadow: 1px 1px 35px #888888;
+}
+
+.ModelPopup {
+    z-index: 1001;
+}
+
+.InsuranceOneHeadPopup, .WarningPopup {
+    z-index: 1001;
+    left: 50px; /*left:-311px;*/
+    top: 400px;
+    height: auto;
+    width: auto;
+}
+
+.WarningPopup {
+    top: 300px;
+}
+
+.WarningPopupBodyMessage {
+    margin: 42px 15px;
+    border: 0 solid red;
+    color: white;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.InsuranceTwoHeadPopup {
+    z-index: 1001;
+    left: 1px; /*left:-311px;*/
+    top: 400px;
+    height: auto; /*width:700px;*/
+    width: 850px;
+}
+
+#PopupFor2Insurances {
+    display: none;
+    border: solid 1px black;
+    position: absolute;
+    background-color: #3192DF;
+    z-index: 1001;
+    left: 1px;
+    top: 400px;
+    height: auto;
+    width: 900px;
+}
+
+.Layout2 {
+    z-index: 1001;
+    left: 1px; /*left:-311px;*/
+    top: 400px;
+    height: auto; /*width:700px;*/
+    width: 850px;
+}
+
+.WarningPopupButtonContainerStyle {
+    float: right;
+    margin-bottom: 15px;
+}
+
+.WarningPopupButtonStyle {
+    color: White;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-right: 20px;
+}
+
+    .WarningPopupButtonStyle:hover {
+        cursor: pointer;
+    }
+
+.innerBlock, .innerBlockCenter {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 25px;
+    line-height: 7px;
+}
+
+.innerBlockCenter {
+    margin-top: 83px;
+    text-align: center;
+}
+
+.popupOkRightBottom {
+    border: 0px solid red;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 360px;
+    margin-right: 18px;
+    margin-top: 81px;
+    text-align: right;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.popupButton {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.popupBodyMessage {
+    line-height: 20px;
+    margin-top: 63px;
+    text-align: center;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.popupOkRightBottom:hover {
+    cursor: hand;
+    cursor: pointer;
+}
+
+.popupButton:hover {
+    cursor: hand;
+    cursor: pointer;
+}
+
+.validationLable {
+    display: none;
+    color: Red;
+}
+
+.div_Form_CloseImage {
+    margin-right: 9px;
+    margin-top: 5px;
+    width: 15px;
+    height: 15px;
+    float: right;
+    background-image: url(icons/Close.jpg);
+    cursor: pointer;
+}
+
+.div_Form_PopupContent {
+    background-color: Green;
+    position: relative;
+    float: right;
+    width: 400px;
+    height: 180px;
+    top: 20px;
+}
+
+.CloseIcon {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-image: url(icons/Close.jpg);
+}
+
+.labelPopupBoxStyle {
+    color: White;
+    font-size: 15px;
+}
+
+.PopupClose {
+    margin-right: 9px;
+    margin-top: 5px;
+    width: 15px;
+    height: 15px;
+    float: right;
+    background-image: url(icons/Close.jpg);
+    cursor: pointer;
+}
+
+.mainMessage {
+    color: White;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.div_Form_TransparantStyle {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #F8F6F0;
+    height: 100%;
+    width: 100%;
+    opacity: .4;
+    filter: Alpha(Opacity=30);
+    z-index: 1000;
+}
+
+.customHyperLink {
+    float: right;
+    padding-right: 20px;
+    color: White;
+}
+
+.customHyperLinkHover:hover {
+    cursor: pointer;
+}
+
+.StructuredNoteStyle {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.Content {
+    line-height: 25px;
+    width: 600px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.font-style {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.captionBlock {
+    float: left;
+    font-size: 14px;
+    height: 22px;
+    margin-bottom: 0;
+    margin-top: 18px;
+    width: 165px;
+}
+
+.validationBlock {
+}
+
+.controlBlock {
+}
+
+.popupOkRightBottomOneHeadPopup {
+    height: 22px;
+    border: 0px solid black;
+    width: 32px;
+    margin-left: 135px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    background-color: #3192df;
+    color: White;
+}
+
+    .popupOkRightBottomOneHeadPopup:hover {
+        cursor: pointer;
+        cursor: hand;
+        text-decoration: underline;
+    }
+
+.CorrectOrWrong {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-left: 148px;
+}
+
+.CorrectOrWrongMsg {
+    float: left;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+
+.MoveToRightSide {
+    float: right;
+    margin-right: 39px;
+}
+
+.MoveToRightSideTwoHead {
+    margin-left: 108px;
+    margin-top: 4px;
+}
+
+.instruction {
+    font-size: 15px;
+    color: Red;
+    font-weight: bold;
+}
+
+.instruction-in-grey {
+    font-size: 15px;
+    color: Gray;
+    font-weight: bold;
+}
+
+.SingleLine {
+    clear: both;
+}
+
+.ErrorMessagePopup {
+    width: 500px;
+    height: 100px;
+    float: left;
+    background-color: #3192DF;
+    padding: 10px;
+}
+
+.PopupLayout {
+    padding: 10px;
+    left: 100px;
+    top: 400px;
+    height: auto;
+    width: auto;
+    min-height: 500px;
+}
+
+.PopupLayoutHead {
+    border: 0px solid red;
+    color: white;
+    font-weight: bold;
+    line-height: 20px;
+    margin-left: 1px;
+    margin-right: 10px;
+}
+
+.FlwdByCompanyName {
+    float: left;
+}
+
+.CompanyName {
+    padding-top: 70px;
+    color: White;
+    font-weight: bold;
+}
+
+.InsuranceCompanyParamsStyl {
+    clear: both;
+    color: White;
+    font-weight: bold;
+}
+
+.PartySelectionSlider {
+    height: 85px;
+    margin-left: 8px;
+}
+
+.Slider {
+    margin-left: 8px;
+}
+
+.PopupOkButton {
+    height: 22px;
+    width: 32px;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    background-color: #3192df;
+    border: 0px solid red;
+    color: White;
+    cursor: pointer;
+}
+
+.OneHeadOkButton {
+    margin-left: 500px;
+    margin-top: 10px;
+}
+
+.TwoHeadOkButton {
+    margin-left: 750px;
+    margin-top: 10px;
+}
+
+.TwoInsurancePopup {
+    margin-left: 849px;
+    margin-top: 10px;
+}
+
+.PremiumResultIndicator {
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+
+.PremiumResultIndicatorMsg {
+    float: left;
+    margin-top: 4px;
+    margin-left: 10px;
+    color: White;
+    font-weight: bold;
+}
+
+.AlignLeft {
+    float: left;
+    padding-left: 15px;
+}
+
+.InsuranceBlock {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#Layout3Panel1.Panel1 {
+    width: 250px;
+    padding: 0px;
+}
+
+#Layout3Panel2.Panel2 {
+    width: 180px;
+}
+
+#Layout3Panel3.Panel1 {
+    width: 250px;
+}
+
+#Layout3Panel4.Panel2 {
+    width: 180px;
+}
+
+.Layout3Panel3 {
+    position: relative;
+    float: left;
+    width: 250px;
+}
+
+.Footer {
+    float: left;
+    position: absolute;
+    bottom: 0px;
+    clear: both;
+    height: 40px;
+    width: 97%;
+    padding-right: 10px;
+    margin-bottom: 10PX;
+}
+
+.UnStructureCounterDiv {
+    float: left;
+    margin-left: 260px;
+    background-color: #F2F2F2;
+    line-height: 0;
+    margin-bottom: 2px;
+    height: 9px;
+    padding-top: 6px;
+    width: 20px;
+    padding-right: 0px;
+    margin-top: -7px;
+}
+
+.ErrorOnHeader {
+    color: Red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.SubtitleButton {
+    height: 76px;
+    width: 850px;
+    display: inline-block;
+}
+
+.SubtitleDiv {
+    width: 500px;
+    height: 49px;
+    float: left;
+}
+
+.SubtitleButtonDiv {
+    float: left;
+    margin-left: 20px;
+}
+
+.UploadButtonDiv {
+    color: red;
+    height: 10px;
+}
+
+.FloatRightOnly {
+    color: green;
+    height: 10px;
+}
+
+.LongTextBox {
+    background-color: white;
+    border-color: gray;
+    border-width: 2px;
+    border-style: solid;
+    width: 600px;
+    height: 26px;
+    float: right;
+    margin-right: 262px;
+}
+
+.latestSuccesUpload {
+    height: 50px;
+    width: 900px;
+}
+
+.UploadLog {
+    background-color: white;
+    border-color: gray;
+    border-width: 2px;
+    border-style: solid;
+    width: 617px;
+    margin-left: 17px;
+    height: 174px;
+    padding-left: 5px;
+}
+
+#FullCover {
+    height: auto;
+}
+
+.SubtitleButton {
+    height: 76px;
+    width: 850px;
+    display: inline-block;
+}
+
+.SubtitleDiv {
+    width: 500px;
+    height: 49px;
+    float: left;
+}
+
+.SubtitleButtonDiv {
+    float: left;
+    margin-left: 20px;
+}
+
+.UploadButtonDiv {
+    width: 641px;
+    display: inline-block;
+    margin-top: 7px;
+    height: 35px;
+}
+
+.FloatRightOnly {
+    float: right;
+}
+
+.ContentCountDiv {
+    width: 590px;
+    height: 35px;
+    margin-top: 6px;
+}
+
+.ContentCount {
+    background-color: #D8D8D8;
+    height: 26px;
+    width: 42px;
+    float: right;
+    text-align: center;
+    line-height: 24px;
+}
+
+.TextArea100 {
+    background-color: white;
+    border-color: gray;
+    border-width: 2px;
+    border-style: solid;
+    width: 576px;
+    height: 174px;
+}
+
+.GeneralNotificationDiv {
+    background-color: #3192DF;
+    height: auto;
+    width: 340px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    display: none;
+    z-index: 150002;
+    box-shadow: 1px 1px 20px #888888;
+}
+
+.GeneralNotificationAttachment {
+    height: 38px;
+    cursor: pointer;
+}
+
+.GeneralNotificationText {
+    font-weight: bold;
+    font-size: 110%;
+    line-height: 1;
+    height: auto;
+    margin: 10px;
+    color: white;
+    white-space: pre-wrap;
+}
+
+.CloseButton {
+    font-weight: bold;
+    font-size: 110%;
+    line-height: 1;
+    height: auto;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.UploadDate {
+    background-color: #D8D8D8;
+    height: auto;
+    width: 90px;
+    text-align: center;
+    line-height: 24px;
+    padding: 3px;
+}
+
+.RowHeadWithControl {
+    clear: both;
+    float: left;
+    display: block;
+    position: relative;
+    min-height: 5px;
+    min-width: 320px;
+    width: 893px;
+    max-width: 960px;
+    display: inline-block;
+    height: 2%;
+    right: 0;
+}
+
+.RowHeadContent {
+    width: 700px;
+    height: 0px;
+}
+
+.UploadDateDiv {
+    width: auto;
+    height: 55px;
+    float: right;
+}
+
+.span-9 {
+    width: 221px;
+}
+
+.span-10 {
+    width: 12px;
+}
+
+.span-11 {
+    width: 37px;
+}
+
+.Navigation1 {
+    max-width: 200px;
+    display: block;
+    float: left;
+}
+
+.InsuranceSubTitle {
+    float: right;
+    padding-top: 12px;
+    font-weight: bold;
+}
+
+.FullCoverSubTitlePadding {
+    padding-right: 176px;
+}
+
+.ZASubTitlePadding {
+    padding-right: 169px;
+}
+
+.AFISubTitlePadding {
+    padding-right: 88px;
+}

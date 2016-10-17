@@ -1,0 +1,170 @@
+﻿@model MVCLearning.Models.ValidationExample.IDentityModelDto
+@using MVCLearning.Helpers;
+
+@{
+    ViewBag.Title = "Default validation example";
+}
+
+<div class="RowHead">
+    <h1>Identities</h1>
+</div>
+
+<div class="PartyDetails">
+
+    @using (Html.BeginForm("SubmitRequest", "Home", null, FormMethod.Post, new { id = "IdentitiesForm" }))
+    {
+
+        <div class="RowHead">
+            <h2>Maintain the identity details of the requester</h2>
+        </div>
+
+        <div class="RowBlock">
+            <div class="ColumnBlock">
+                <div class="container">
+                    <div class="span-8 last">
+                        <label>
+                            <label class="inlinelabel">Last Name</label><label class="RedText">*</label>
+                        </label><br />
+                        @Html.ValidationMessageFor(x => x.ActiveParty.LastName)
+                        @Html.TextBoxFor(x => x.ActiveParty.LastName, new { @class = "span-7 alpha-and-hypen-only", @maxlength = 50, @id = "ActiveParty_LastName" })
+                    </div>
+                    <br />
+                    <div class="span-8 last">
+                        <label>
+                            <label class="inlinelabel span-7">First Name</label><label class="RedText">*</label>
+                        </label><br />
+                        @Html.ValidationMessageFor(x => x.ActiveParty.FirstName)
+                        @Html.TextBoxFor(x => x.ActiveParty.FirstName, new { @class = "span-7 alpha-and-hypen-only", @maxlength = 50 })
+                    </div>
+                    <div class="span-8 last">
+                        <label>
+                            <label class="inlinelabel">National Number</label><label id="NationalNumberMandatory" class="RedText">*</label>
+                        </label><br />
+                        @Html.ValidationMessageFor(x => x.ActiveParty.NationalNumber)
+                        @Html.TextBoxFor(x => x.ActiveParty.NationalNumber, new { @class = "span-7 numericonly AutoSave", @maxlength = 50 })
+                    </div>
+                    <div class="span-8 last">
+                        <label> ID Card Number</label><br />
+                        @Html.ValidationMessageFor(x => x.ActiveParty.IDCardNumber)
+                        @Html.TextBoxFor(x => x.ActiveParty.IDCardNumber, new { @class = "span-7", @maxlength = 15 })
+                    </div>
+                    <div class="span-8 last">
+                        <label> ID Card Validity</label><br />
+                        @Html.ValidationMessageFor(x => x.ActiveParty.IDCardValidity)
+                        @Html.DateTextBoxFor(x => x.ActiveParty.IDCardValidity, new { @class = "span-7 datepickerInput", @maxlength = 10 })
+                    </div>
+                    <div class="span-8 last">
+                        <label>
+                            <label class="inlinelabel">Language</label><label class="RedText">*</label>
+                        </label><br />
+                        @Html.ValidationMessageFor(x => x.ActiveParty.Language)
+                        @Html.AutoCompleteBoxFor((object[])ViewBag.LanguageList, x => x.ActiveParty.Language, new { @class = "span-7 autocomplete" })
+                    </div>
+                    <div class="span-8 last">
+                        <label>
+                            <label class="inlinelabel">Gender</label><label class="RedText">*</label>
+                        </label><br />
+                        @Html.ValidationMessageFor(x => x.ActiveParty.Gender)
+                        @Html.AutoCompleteBoxFor((object[])ViewBag.GenderList, x => x.ActiveParty.Gender, new { @class = "span-7 autocomplete" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="ColumnBlock">
+                <div class="container">
+                    <div class="span-8 last">
+                        <label> <label class="inlinelabel">Nationality</label><label class="RedText">*</label> </label><br />
+                        @Html.ValidationMessageFor(x => x.ActiveParty.Nationality)
+                        @Html.AutoCompleteBoxFor((object[])ViewBag.NationalityList, x => x.ActiveParty.Nationality, new { @class = "span-7 autocomplete" })
+                    </div>
+                    <div class="span-8 last">
+                        <label><label id="InSinceLabel" class="inlinelabel">In Belgium since</label><label id="InBelgiumSinceMandatory" class="RedText">*</label> </label><br />
+                        @Html.ValidationMessageFor(x => x.ActiveParty.InBelgiumSince)
+                        @Html.DateTextBoxFor(x => x.ActiveParty.InBelgiumSince, new { @class = "span-7 data datepickerInput", @maxlength = 10 })
+                    </div>
+                    <div class="span-8 last">
+                        <label>
+                            <label class="inlinelabel">BirthDate</label><label class="RedText">*</label>
+                        </label><br />
+                        @Html.ValidationMessageFor(x => x.ActiveParty.BirthDate)
+                        @Html.DateTextBoxFor(x => x.ActiveParty.BirthDate, new { @class = "span-7 data datepickerInput AutoSave", @maxlength = 10 })
+                    </div>
+                    <div class="span-8 last">
+                        <label>
+                            <label class="inlinelabel">BirthPlace</label><label class="RedText">*</label>
+                        </label><br />
+                        @Html.ValidationMessageFor(x => x.ActiveParty.BirthPlace)
+                        @Html.TextBoxFor(x => x.ActiveParty.BirthPlace, new { @class = "span-7 alphaonly", @maxlength = 50 })
+                    </div>
+                    <div class="span-8 last">
+                        <label>
+                            <label class="inlinelabel">CivilState</label><label class="RedText">*</label>
+                        </label><br />
+                        @Html.ValidationMessageFor(x => x.ActiveParty.CivilState)
+                        @Html.AutoCompleteBoxFor((object[])ViewBag.CivilStateList, x => x.ActiveParty.CivilState, new { @class = "span-7 autocomplete" })
+                    </div>
+                    <div class="span-8 last">
+                        <label>
+                            <label class="inlinelabel">MariageContract</label><label class="RedText">*</label>
+                        </label><br />
+                        @Html.ValidationMessageFor(x => x.ActiveParty.MarriageContract)
+                        @Html.AutoCompleteBoxFor((object[])ViewBag.MarriageContractList, x => x.ActiveParty.MarriageContract, new { @class = "span-7 autocomplete" })
+                    </div>
+                    <div class="span-8 last">
+                        <label>
+                            <label class="inlinelabel">Children at charge</label><label class="RedText">*</label>
+                        </label><br />
+                        @Html.ValidationMessageFor(x => x.ActiveParty.NumberOfDependentChildren)
+                        @Html.TextBoxFor(x => x.ActiveParty.NumberOfDependentChildren, new { @class = "span-7 numericonly", @maxlength = 10 })
+                    </div>
+                </div>
+            </div>
+
+            <div class="ColumnBlock">
+                <div class="container">
+                    <div class="span-8 last">
+                        <label>
+                            <label class="inlinelabel">PhoneNumber</label><label id="AsteriskForPhoneNumber" class="RedText">*</label>
+                        </label><br />
+                        @Html.ValidationMessageFor(x => x.ActiveParty.PhoneNumber)
+                        @Html.TextBoxFor(x => x.ActiveParty.PhoneNumber, new { @class = "span-7 numericonly", @maxlength = 30 })
+                    </div>
+                    <div class="span-8 last">
+                        <label>Email</label><br />
+                        @Html.ValidationMessageFor(x => x.ActiveParty.Email)
+                        @Html.TextBoxFor(x => x.ActiveParty.Email, new { @class = "span-7", @maxlength = 100 })
+                    </div>
+                    <div class="span-8 last">
+                        <label>IBAN</label><br />
+                        @Html.ValidationMessageFor(x => x.ActiveParty.IBAN)
+                        @Html.TextBoxFor(x => x.ActiveParty.IBAN, new { @class = "span-7", @maxlength = 50 })
+                    </div>
+                    <div class="span-8 last">
+                        <label>BIC</label>
+                        @Html.ValidationMessageFor(x => x.ActiveParty.BIC)<br />
+                        @Html.TextBoxFor(x => x.ActiveParty.BIC, new { @class = "span-7", @maxlength = 50 })
+                    </div>
+                    <div class="span-8 last">
+                        <label>
+                            <label class="inlinelabel">Professional Category</label><label class="RedText">*</label>
+                        </label>
+                        @Html.ValidationMessageFor(x => x.ActiveParty.ProfessionCategory)<br />
+                        @Html.AutoCompleteBoxFor((object[])ViewBag.ProfessionCategoryList, x => x.ActiveParty.ProfessionCategory, new { @class = "span-7 autocomplete" })
+                    </div>
+                    <div class="span-8 last">
+                        <label>
+                            <label class="inlinelabel">Profession</label><label class="RedText">*</label>
+                        </label>
+                        @Html.ValidationMessageFor(x => x.ActiveParty.Profession)<br />
+                        @Html.AutoCompleteBoxFor((object[])ViewBag.ProfessionList, x => x.ActiveParty.Profession, new { @class = "span-7 autocomplete" })
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    }
+
+    <div class="ButtonArea">
+        <input id="SubmitBtn" type="button" value="Submit" />
+    </div>
+</div>
