@@ -170,6 +170,7 @@
     </Compile>
     <Compile Include="Helpers\AutoCompleteBox.cs" />
     <Compile Include="Helpers\DateTextBoxFor.cs" />
+    <Compile Include="Lib\BaseModel.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ValidationExample\IdentityModelDto.cs" />

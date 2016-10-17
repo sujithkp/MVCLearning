@@ -50,14 +50,22 @@ namespace MVCLearning.Controllers
 
         public ActionResult SubmitRequest(IDentityModelDto model)
         {
-            if (ModelState.IsValid)
-            {
+            string validationMessage = string.Empty;
 
+            if (!ModelState.IsValid)
+            {
+                validationMessage = ValidateModel(model.ActiveParty);
             }
 
-            ValidateModel(model.ActiveParty);
+            if (validationMessage.Length != 0)
+            {
+                model.ValidationMessage = validationMessage;
 
-            return null;
+                return View("DefaultValidationEx", model);
+            }
+
+
+            return Content("Saved") ;
         }
 
 

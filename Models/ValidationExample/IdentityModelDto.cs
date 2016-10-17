@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using MVCLearning.Lib;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace MVCLearning.Models.ValidationExample
 {
-    public class IDentityModelDto 
+    public class IDentityModelDto  : BaseModel
     {
         public IDentityModelDto()
         {

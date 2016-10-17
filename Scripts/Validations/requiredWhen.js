@@ -6,6 +6,8 @@
 
         var actualValueofdependentproperty = $(params["dependentelement"]).val();
 
+        //throw "Error";
+
         if (actualValueofdependentproperty == undefined)
             actualValueofdependentproperty = $(params["dependentelement"]).getValue();
 

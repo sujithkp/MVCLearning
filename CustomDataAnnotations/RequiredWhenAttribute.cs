@@ -34,10 +34,11 @@ namespace MVCLearning.CustomDataAnnotations
 
             if (ExpectedValues != null)
             {
-                if (ExpectedValues.Contains(obj) && value != null)
-                    return null;
-                else
-                    return new ValidationResult(base.ErrorMessageString);
+                if (ExpectedValues.Contains(obj)) {
+                    if (value == null) {
+                        return new ValidationResult(base.ErrorMessageString);
+                    }
+                }
             }
 
             return null;
