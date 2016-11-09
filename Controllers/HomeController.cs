@@ -34,7 +34,38 @@ namespace MVCLearning.Controllers
         public ActionResult DefaultValidationEx()
         {
             var model = new IDentityModelDto();
+            LoadLookups();
 
+            return View(model);
+        }
+
+        public ActionResult SubmitRequest(IDentityModelDto model)
+        {
+            if (!ModelState.IsValid)
+            {
+                ViewBag.ValidationErrors = GetValidationErrors();
+
+                LoadLookups();
+                return View("DefaultValidationEx", model);
+            }
+
+            return Content("Saved");
+        }
+
+        private IEnumerable<String> GetValidationErrors()
+        {
+            var validationErrors = new StringBuilder();
+            foreach (var errorList in ModelState.Values.ToList().Where(x => x.Errors.Count > 0).ToList())
+            {
+                foreach (var error in errorList.Errors)
+                {
+                    yield return error.ErrorMessage;
+                }
+            }
+        }
+
+        private void LoadLookups()
+        {
             ViewBag.LanguageList = new String[] { "English", "French", "Dutch", "Espanol" };
             ViewBag.GenderList = new String[] { "Male", "Female" };
 
@@ -43,29 +74,6 @@ namespace MVCLearning.Controllers
             ViewBag.MarriageContractList = new String[5];
             ViewBag.ProfessionCategoryList = new String[5];
             ViewBag.ProfessionList = new String[5];
-
-            return View(model);
-        }
-
-
-        public ActionResult SubmitRequest(IDentityModelDto model)
-        {
-            string validationMessage = string.Empty;
-
-            if (!ModelState.IsValid)
-            {
-                validationMessage = ValidateModel(model.ActiveParty);
-            }
-
-            if (validationMessage.Length != 0)
-            {
-                model.ValidationMessage = validationMessage;
-
-                return View("DefaultValidationEx", model);
-            }
-
-
-            return Content("Saved") ;
         }
 
 

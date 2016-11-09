@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Text;
 using System.Web;
 using System.Web.Mvc;
 
@@ -43,6 +44,7 @@ namespace MVCLearning.Helpers
             tagBuilder.MergeAttribute("name", fullName, true);
             tagBuilder.MergeAttribute("value", attemptedValue);
             tagBuilder.GenerateId(fullName);
+            var ctrlId = tagBuilder.Attributes["id"];
 
             // If there are any errors for a named field, we add the css attribute.
             ModelState modelState;
@@ -58,7 +60,14 @@ namespace MVCLearning.Helpers
             var attr = htmlHelper.GetUnobtrusiveValidationAttributes(fullName, modelMetaData);
             tagBuilder.MergeAttributes(attr);
 
-            return new MvcHtmlString(tagBuilder.ToString(TagRenderMode.SelfClosing));
+            var scripts = new StringBuilder();
+                  scripts.Append("<script type=\"text/javascript\">");
+            scripts.Append("$(document).ready(function () {");
+            scripts.AppendFormat("$('#{0}').datepicker();", ctrlId);
+            scripts.Append("});");
+            scripts.Append("</script>");
+
+            return new MvcHtmlString(string.Format("{0}{1}",tagBuilder.ToString(TagRenderMode.SelfClosing), scripts));
         }
 
     }

@@ -26,11 +26,7 @@ namespace MVCLearning.Helpers
             {
             }
 
-            int codeId = 0;
-            if (result != null && !int.TryParse(result.ToString(), out codeId))
-                throw new Exception("Binding property must be an integer type");
-
-            object attemptedValue = null;
+            object attemptedValue = result;
 
             TagBuilder tagBuilder = new TagBuilder("input");
             tagBuilder.MergeAttributes(HtmlHelper.AnonymousObjectToHtmlAttributes(htmlAttributes));
@@ -67,7 +63,7 @@ namespace MVCLearning.Helpers
             scripts.Append("});");
             scripts.Append("</script>");
 
-            var hiddenField = string.Format("<input type=\"hidden\" id=\"{0}\" name=\"{1}\" value=\"{2}\" />", id, fullName, codeId == 0 ? "" : codeId.ToString());
+            var hiddenField = string.Format("<input type=\"hidden\" id=\"{0}\" name=\"{1}\" value=\"{2}\" />", id, fullName, result);
 
             return new MvcHtmlString(string.Format("{0}{1}{2}", tagBuilder.ToString(TagRenderMode.SelfClosing), hiddenField, scripts.ToString()));
         }

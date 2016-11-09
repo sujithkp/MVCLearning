@@ -13,7 +13,6 @@
 
     @using (Html.BeginForm("SubmitRequest", "Home", null, FormMethod.Post, new { id = "IdentitiesForm" }))
     {
-
         <div class="RowHead">
             <h2>Maintain the identity details of the requester</h2>
         </div>
@@ -164,7 +163,23 @@
         </div>
     }
 
-    <div class="ButtonArea">
+    <div class="RowBlock ButtonArea">
         <input id="SubmitBtn" type="button" value="Submit" />
     </div>
+
+    @if (ViewBag.ValidationErrors != null)
+    {
+        <div class="ValidationErrorsBlock RowBlock">
+
+            <ul>
+                @foreach (var error in ViewBag.ValidationErrors)
+                {
+                    <li>@error</li>
+                }
+
+            </ul>
+        </div>
+    }
+
+
 </div>
